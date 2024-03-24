@@ -314,6 +314,52 @@ span {
     background: var(--bg-color);
 }
 
+
+.experience .contents {
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+.experience .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.experience .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+.experience .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: var(--main-color);
+    border: 2px solid white;
+}
+.box h4{
+    position: relative;
+    color: var(--bg-color);
+    font-size: large;
+}
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: var(--second-bg-color);
+}
+.box p{
+    line-height: 1.2;
+    color: white;
+    font-size: 17px;
+}
+
 .certificates {
     background: var(--bg-color);
 }
